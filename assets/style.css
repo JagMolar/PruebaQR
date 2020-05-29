@@ -1,0 +1,13 @@
+.container{
+    background-color: rgba(220, 220, 220, 0.849);
+    /* background-image: url(img/fondocarta.jpg); */
+}
+
+#descrip p{ 
+    display: block;
+    float: right;
+}
+
+#descrip img{
+  width: 0rem;
+}
