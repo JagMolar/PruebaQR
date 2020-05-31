@@ -1,3 +1,3 @@
 # PruebaQR
-Contacto con librería para creación de QR
-Pueddes Probarla en  https://jagmolar.github.io/PruebaQR/
+Contacto con librería para creación de QR.
+Aplicación  sencilla  para obtener QR mediante  JavaScript y PHP
