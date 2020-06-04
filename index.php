@@ -77,34 +77,6 @@ require('vendor/autoload.php')
             </div>
             <!-- <div class="col-md-3">
                 <form class="form-horizontal" action="generate_code.php" method="post" id="fileForm" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <h6>Opción 1 subiendo tu archivo</h6>
-                                <div class="form-group">
-                                <p>
-                                    <label class="control-label">Nivel del código (ECC): </label>
-                                    <select class="form-control col-xs-10" id="ecc">
-                                        <option value="H">H - Mayor calidad</option>
-                                        <option value="M">M</option>
-                                        <option value="Q">Q</option>
-                                        <option value="L">L - Peor resolución</option>
-                                    </select>               
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <p>
-                                    <label class="control-label">Tamaño: </label>
-                                    <input class="form-control col-xs-10" id="size" type="number" min="1" max="10" value="5">               
-                                </p>
-                            </div>
-                            <p>
-                                <label class="control-label">Sube aquí tu archivo: </label>
-                                <input class="form-control col-xs-1" id="file" name="file" type="file" >            
-                            </p>
-                            <p>
-                                <label class="control-label"></label>
-                                <input class="btn btn-sucess" type="submit" id="submit" value="Generar QR archivo"> 
-                            </p> 
-                    </div>
                 </form>
             </div> -->
             
