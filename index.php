@@ -44,7 +44,7 @@
             <div class="col-md-9" id="descrip">
                 <p>
                 Desde ahora puedes ofrecer tus servicios mediante cómodos códigos QR, que facilitarán tu comunicación 
-                con tus clientes, a la vez que se minimiza el contacto físico, y aportando una mayor sensación de seguridad.
+                con tus clientes, a la vez que se minimiza el contacto físico, aportando además una mayor sensación de seguridad.
                 </p>
             </div>
         </div>
