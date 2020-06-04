@@ -1,5 +1,6 @@
 <?php
-require('vendor/autoload.php')
+// require('vendor/autoload.php')
+require_once('index.html');
  ?>
 
 <!DOCTYPE html>
@@ -9,30 +10,30 @@ require('vendor/autoload.php')
 <!--[if (gt IE 9)|!(IE)]><!-->
 <!--<![endif]-->
 <!--<![endif]-->
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <title>Prueba QR</title>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
 
     <!-- Meta -->
-    <meta name="keywords" content="" />
+    <!-- <meta name="keywords" content="" />
     <meta name="author" content="Juan A. García Muelas-Jag Molar">
     <meta name="robots" content="" />
-    <meta name="description" content="" />
+    <meta name="description" content="" /> -->
 
     <!-- this styles only adds some repairs on idevices  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico.png">
+    <!-- <link rel="shortcut icon" href="images/favicon.ico.png"> -->
     
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- stylesheets -->
-    <link rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -61,31 +62,31 @@ require('vendor/autoload.php')
                 <ul>
                     <li>Puedes crearlo a través de tu Google Drive u otro almacenamiento en la nube que tengas.
                         Sólo tienes que copiar y pegar el enlace para crear tu QR.
-                    </li>
+                    </li> -->
                     <!-- <li>Funciona tanto con imágenes como con PDF</li> -->
-                    <li>
+                    <!-- <li>
                         Captura con tu móvil la imagen y compártela desde aquí.
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
 
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <h2>Generar código QR</h2>
-            </div>
+            </div> -->
             <!-- <div class="col-md-3">
                 <form class="form-horizontal" action="generate_code.php" method="post" id="fileForm" enctype="multipart/form-data">
                 </form>
             </div> -->
             
 
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <form class="form-horizontal" action="" method="post" id="codeForm" onSubmit="return false" >
-                    <div class="form-group">
+                    <div class="form-group"> -->
                         <!-- <h6>Opción 2 mediante enlace</h6> -->
-                        <p>
+                        <!-- <p>
                             <label class="control-label">Copia aquí tu enlace: </label>
                             <input class="form-control col-xs-1" id="content" type="text" >               
                         </p>
@@ -124,4 +125,4 @@ require('vendor/autoload.php')
         </div>
     </div>
 </body>
-</html>
+</html> -->
