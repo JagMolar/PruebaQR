@@ -59,8 +59,8 @@
                         Sólo tienes que copiar y pegar el enlace para crear tu QR.
                     </li>
                     <!-- <li>Funciona tanto con imágenes como con PDF</li> -->
-                    <li>Captura con tu móvil la imagen y compártela desde aquí.
-                        Nosotros hacemos el resto
+                    <li>
+                        Captura con tu móvil la imagen y compártela desde aquí.
                     </li>
                 </ul>
             </div>
