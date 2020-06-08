@@ -18,9 +18,9 @@ if(isset($_POST) && !empty($_POST)) {
     $codeFile = date('d-m-Y-h-i-s').'.png';//se almacenan por fecha, asegurando sean únicos
     //El método png crea el QR
     // QRcode::png($_POST['formData'], $codesDir.$codeFile, $_POST['ecc'], $_POST['size']); 
-    QRcode::png($_POST['formData'], $codeFile, $_POST['ecc'], $_POST['size']); 
+    // QRcode::png($_POST['formData'], $codeFile, $_POST['ecc'], $_POST['size']); 
     // echo '<img class="img-thumbnail" src="'.$codeFile.'" />';
-    echo '<h1>Imagen</h1>';
+    echo '<h1>Imagen'.$codeFile.'</h1>';
 } else {
     header('location:./');
 }
