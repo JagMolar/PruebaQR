@@ -14,11 +14,13 @@
 if(isset($_POST) && !empty($_POST)) {
     //Si se reciben datos, se llama a la libreria
     include('library/phpqrcode/qrlib.php'); 
-    $codesDir = "codes/"; //Carpeta de destino de las imágenes creadas  
+    // $codesDir = "codes/"; //Carpeta de destino de las imágenes creadas  
     $codeFile = date('d-m-Y-h-i-s').'.png';//se almacenan por fecha, asegurando sean únicos
     //El método png crea el QR
-    QRcode::png($_POST['formData'], $codesDir.$codeFile, $_POST['ecc'], $_POST['size']); 
-    echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
+    // QRcode::png($_POST['formData'], $codesDir.$codeFile, $_POST['ecc'], $_POST['size']); 
+    QRcode::png($_POST['formData'], $codeFile, $_POST['ecc'], $_POST['size']); 
+    // echo '<img class="img-thumbnail" src="'.$codeFile.'" />';
+    echo '<h1>Imagen</h1>';
 } else {
     header('location:./');
 }
