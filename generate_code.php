@@ -33,8 +33,8 @@ if(isset($_POST) && !empty($_POST)) {
     var_dump($codesDir);
     var_dump($codeFile);
     QRcode::png($_POST['formData'], $codesDir.$codeFile, $_POST['ecc'], $_POST['size']); 
-    die(var_dump($_POST));
     echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
+    echo ('<p>test3<p>');
 } else {
     header('location:./');
 }
