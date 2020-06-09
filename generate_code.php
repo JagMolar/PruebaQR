@@ -26,7 +26,7 @@ require  ' Helpers.php ' ; // opcional para usar los métodos auxiliares cl_imag
 if(isset($_POST) && !empty($_POST)) {
     //Si se reciben datos, se llama a la libreria
     include('library/phpqrcode/qrlib.php'); 
-    $codesDir = \Cloudinary\Uploader::upload('$qr'); //Carpeta de destino de las imágenes creadas  
+    $codesDir = \Cloudinary\Uploader::upload($qr); //Carpeta de destino de las imágenes creadas  
     $codeFile = date('d-m-Y-h-i-s').'.png';//se almacenan por fecha, asegurando sean únicos
     //El método png crea el QR
     $qr = QRcode::png($_POST['formData'], $codesDir.$codeFile, $_POST['ecc'], $_POST['size']); 
