@@ -30,15 +30,15 @@ if(isset($_POST) && !empty($_POST)) {
     // $codesDir = \Cloudinary\Uploader::upload($qr); 
     $codeFile = date('d-m-Y-h-i-s').'.png';//se almacenan por fecha, asegurando sean únicos
     //El método png crea el QR
-    var_dump($codesDir);
-    var_dump($codeFile);
-    var_dump($_POST['formData']);
-    var_dump($_POST['ecc']);
-    var_dump($_POST['size']);
+    // var_dump($codesDir);
+    // var_dump($codeFile);
+    // var_dump($_POST['formData']);
+    // var_dump($_POST['ecc']);
+    // var_dump($_POST['size']);
     QRcode::png($_POST['formData'], $codesDir.$codeFile, $_POST['ecc'], $_POST['size']); 
-    echo ('<p>test4</p>');
+    // echo ('<p>test4</p>');
     echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
-    echo ('<p>test5</p>');
+    // echo ('<p>test5</p>');
 } else {
     header('location:./');
 }
