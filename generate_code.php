@@ -26,16 +26,16 @@
 if(isset($_POST) && !empty($_POST)) {
     //Si se reciben datos, se llama a la libreria
     include('library/phpqrcode/qrlib.php'); 
-    $codesDir = "codes/"; //Carpeta de destino de las imágenes creadas
+    $codesDir = "codes/"; //Carpeta de destino de las imágenes creadas  
     // $codesDir = \Cloudinary\Uploader::upload($qr); 
     $codeFile = date('d-m-Y-h-i-s').'.png';//se almacenan por fecha, asegurando sean únicos
     //El método png crea el QR
     var_dump($codesDir);
     var_dump($codeFile);
     QRcode::png($_POST['formData'], $codesDir.$codeFile, $_POST['ecc'], $_POST['size']); 
-    echo ('<p>test3</p>');
-    echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
     echo ('<p>test4</p>');
+    echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
+    echo ('<p>test5</p>');
 } else {
     header('location:./');
 }
