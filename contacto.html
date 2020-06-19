@@ -69,80 +69,65 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
             <div class="inner">
-              <a href="index.html"><h3 class="masthead-brand">Prueba tu QR</h3></a>
+                <a href="index.html"><h3 class="masthead-brand">Prueba tu QR</h3></a>
               <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html">Inicio</a>
                 <!-- <a class="nav-link" href="#">Features</a> -->
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </nav>
             </div>
         </header>
         <main role="main" class="inner cover">
             <div class="box alt">
                 <div class="row gtr-50 gtr-uniform">
-                    <span class="image fit"><img src="assets/images/hands-qr-full.jpg" alt="foto qr" /></span>
+                    <span class="image fit"><img src="assets/images/qr-code.jpg" alt="foto qr" /></span>
                 </div>
-             </div>
-            <h2 class="cover-heading">Ofrece tu menú o carta con un sencillo código QR</h2>
+            </div>
+            <h2 class="cover-heading">Contacta conmigo</h2>
             <p class="lead">
-                Desde ahora puedes ofrecer tus servicios mediante cómodos códigos QR, que facilitarán tu comunicación 
-                con tus clientes, a la vez que se minimiza el contacto físico, y aportando una mayor sensación de seguridad.
+                Si necesitas más información sobre mí, o comentarme algo, puedes hacerlo a continuación.<br />
+                Puedes mandar un mensaje diréctamente desde el siguiente formulario.
             </p>
-            <h2 class="cover-heading">Fácil y rápido de crear</h2>
-            <p class="lead">
-                Puedes crearlo a través de tu Google Drive u otro almacenamiento en la nube que tengas.
-                Sólo tienes que copiar y pegar el enlace para crear tu QR
-            </p>
-            <p class="lead">
-                Captura con tu móvil la imagen y compártela desde aquí. La aplicación el resto.
-            </p>
-            <h2 class="cover-heading">Generar código QR</h2>
             <div class="container">
                 <div class="row">
-                <div class="col-md-4">
-                    <form class="form-horizontal" method="post" id="codeForm" onSubmit="return false" >
-                        <div class="form-group">
-                            <p>
-                                <label class="control-label">Copia aquí tu enlace: </label>
-                                <input class="form-control col-xs-1" id="content" type="text" >               
-                            </p>
-                            <p>
-                                <label class="control-label">Nivel del código (ECC): </label>
-                                <select class="form-control col-xs-10" id="ecc">
-                                    <option value="H">H - Mayor calidad</option>
-                                    <option value="M">M</option>
-                                    <option value="Q">Q</option>
-                                    <option value="L">L - Peor resolución</option>
-                                </select>               
-                            </p>
-                            <p>
-                                <label class="control-label">Tamaño: </label>
-                                <input class="form-control col-xs-10" id="size" type="number" step="1" min="1" max="10" value="5">               
-                            </p>
-                        </div>
-                        <div class="form-group">
-                            <p>
-                                <label class="control-label"></label>
-                                <input class="btn btn-lg btn-secondary" id="submit" name="submit" type="submit" value="Generar código QR">               
-                            </p>
-                        </div>
-                    </form>
-                </div>
-    
-                <div class="col-md-5">
-                    <div class="showQRCode">
+                    <div class="col-md-6">
+                        <form class="form-horizontal" id="contacto" method="post" action="">
+                            <div class="form-group">
+                                <p>
+                                    <input  class="form-control col-xs-1" type="text" name="name" id="name" placeholder="Nombre" required />
+                                </p>
+                                <p>
+                                    <input class="form-control col-xs-1"  type="email" name="email" id="email" placeholder="Email" required />
+                                </p>
+                                <p>
+                                    <textarea class="form-control col-xs-1"  name="message" id="message" placeholder="Mensaje" rows="4" required></textarea>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="demo-human" name="demo-human" required>
+                                    <label for="demo-human">No soy un robot</label>
+                                </p>      
+                            </div>
+                        </form>
+                        <input class="btn btn-lg btn-secondary" type="submit" id="submit" style="margin: 1rem 1rem 1rem 0 !important;" value="Enviar Mensaje" onclick="sendEmail()" />
+                        <input class="btn btn-lg btn-secondary" type="reset" style="margin: 1rem 1rem 1rem 0 !important;" value="Limpiar" />
                     </div>
                 </div>
-                <div class="insert-post-ads1" style="margin-top:20px;"></div>
-                </row>
             </div>
         </main>
-        <div class="clearfix"></div>
         <footer id="footer" class="mastfoot mt-auto">
             <div class="inner">
               <p>Conoce más de mí en  <a target="blank" href="https://jagmolar.github.io/CV_2020/#">Juan A. García Muelas</a>.</p>
             </div>
-        </footer>
-    </div>
+        </footer> 
+    </div>  
 </body>
-</html>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="assets/js/index.js"></script> 
+</html>                            
